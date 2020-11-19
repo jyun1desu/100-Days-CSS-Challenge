@@ -1,0 +1,23 @@
+{
+  "name": "100-Days-CSS-Challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass --watch 01_Title/style.scss:01_Title/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jyun1desu/100-Days-CSS-Challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jyun1desu/100-Days-CSS-Challenge/issues"
+  },
+  "homepage": "https://github.com/jyun1desu/100-Days-CSS-Challenge#readme",
+  "dependencies": {
+    "sass": "^1.29.0"
+  }
+}
