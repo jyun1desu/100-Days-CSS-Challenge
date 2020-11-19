@@ -1,0 +1,16 @@
+html,body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.frame {
+  width: 400px;
+  height: 400px;
+  border-radius: 3px;
+  background-image: linear-gradient(to right top, #ffc0d9, #ffc7c4, #fbd1ba, #ecddbc);
+}
+
+/*# sourceMappingURL=style.css.map */
