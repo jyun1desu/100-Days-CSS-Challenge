@@ -1,5 +1,106 @@
-.frame{
+$border-radius: 3px;
+$number-width: 25px;
+@mixin numberone{
+    background-color: white;
+    border-radius: $border-radius;
+    width: $number-width;
+}
+@mixin drop_shadow{
+    filter: drop-shadow(0 0 4px rgb(138, 135, 135));
+}
+
+
+*{
+    font-family: 'Varela Round', sans-serif;
+    // outline: 1px solid green;
+}
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.frame {
     width: 400px;
     height: 400px;
-    background-color: pink;
+    border-radius: $border-radius;
+    background-image: linear-gradient(to right top, #ffc0d9, #ffc7c4, #fbd1ba, #ecddbc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.number{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .number_one {
+        z-index: 3;
+        
+        .serif_outer{
+            @include drop_shadow;
+            .serif{
+                @include numberone;
+                width: 22px;
+                height: 45px;
+                transform: rotate(50deg);
+                position: relative;
+                clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+                top: -8px;
+            }
+        }
+        .main_body{
+            @include numberone;
+            @include drop_shadow;
+            height: 100px;
+            position: absolute;
+            top:0px;
+            left: 10px;
+        }
+    }
+    .number_zero{
+        @include drop_shadow;
+        width: 50px;
+        height: 50px;
+        border: 25px solid white;
+        border-radius: 50px;
+        margin: 0;
+
+        &.first{
+            z-index: 2;
+            position: relative;
+            left: 10px;
+        }
+        &.second{
+            z-index: 1;
+            // position: absolute;
+            // left: 10px;
+        }
+    }
+
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    
+    &>p{
+        margin: 0;
+        color: white;
+    }
+
+    .big_title{
+        font-size: 75px;
+        line-height: 1;
+    }
+    .small_title{
+        font-size: 22px;
+    }
 }
