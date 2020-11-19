@@ -1,0 +1,37 @@
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.frame {
+  width: 400px;
+  height: 400px;
+  border-radius: 3px;
+  background-color: #A37D6C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_icon input#hamburger {
+  display: none;
+}
+.menu_icon label[for=hamburger] {
+  cursor: pointer;
+}
+.menu_icon label[for=hamburger] .icon_line {
+  display: block;
+  width: 75px;
+  height: 7px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 0px 4px #555;
+}
+.menu_icon label[for=hamburger] .icon_line:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+/*# sourceMappingURL=style.css.map */
