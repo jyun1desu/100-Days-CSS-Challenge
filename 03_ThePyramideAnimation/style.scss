@@ -27,9 +27,16 @@ body {
     overflow: hidden;
     background: linear-gradient(to bottom,#A5D8E3 0% $ground_position,#EDDE8B $ground_position 100%);
     position: relative;
+
+    animation: picture_show 7s infinite;
     .sun{
-        width: 40px;
-        height: 40px;
+        animation: sun_move 7s infinite;
+        position: absolute;
+        bottom: 85px;
+        left: -20px;
+        transform-origin: 410% 150%;
+        width: 30px;
+        height: 30px;
         border-radius: 100%;
         background-color: #FEDC54;
     }
@@ -39,17 +46,20 @@ body {
         width: 120px;
         height: 60px;
         clip-path: polygon(50% 0,0 100%,100% 100%);
-        background-color: #DCDCDC;
+        background-color: #C2C2C2;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         bottom: 99.7%-$ground_position;
+
+        animation: right_mountain_shading 7s infinite;
 
         .left_side{
             width: 120px;
             height: 60px;
             background-color: #F8F8F8;
             clip-path: polygon(0 0,50% 0,66% 100%,0 100%);
+            animation:left_mountain_shading 7s infinite;
         }
     }
 
@@ -62,7 +72,90 @@ body {
         left: 50%;
         transform: translateX(-50%);
         top: $ground_position;
-        clip-path: polygon(24.5% 0, 74.5% 0, 100% 100%, 100% 100%);
+        clip-path: polygon(24.5% 0, 74.5% 0, 100% 0, 100% 0);
+        animation: mountain_shadow 7s infinite;
     }
 
+}
+
+@keyframes picture_show{
+    0%{
+        opacity: 0;
+    }
+    10%,70%{
+        opacity: 1;
+    }
+    90%,100%{
+        opacity: 0;
+    }
+}
+
+
+@keyframes sun_move{
+    0%{
+        transform: rotate(0deg) ;
+    }
+    20%{
+        transform: rotate(40deg);
+    }
+    90%{
+        transform: rotate(160deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes right_mountain_shading{
+    0%{
+        background-color:  #C2C2C2;
+    }
+    25%{
+        background-color: #D1D1D1;
+    }
+    50%{
+        background-color: #F8F8F8;
+    }
+    100%{
+        background-color: #F8F8F8;
+    }
+}
+
+@keyframes left_mountain_shading{
+    0%{
+        background-color:  #F8F8F8;
+    }
+    25%{
+        background-color:  #F8F8F8;
+    }
+    50%{
+        background-color: #D1D1D1;
+    }
+    90%,100%{
+        background-color: #ADADAD;
+    }
+}
+
+@keyframes mountain_shadow{
+    0%{
+        clip-path: polygon(24.5% 0, 75% 0, 100% 0, 100% 0);
+    }
+    10%{
+        clip-path: polygon(25% 0, 75% 0, 100% 30%, 100% 30%);
+    }
+    20%{
+        clip-path: polygon(25% 0, 75% 0, 90% 20%, 90% 20%);
+    }
+    45%{
+        clip-path: polygon(25% 0, 75% 0, 45% 70%, 45% 70%);
+    }
+    60%{
+        clip-path: polygon(25% 0, 75% 0,10% 70%,10% 70%);
+    }
+    75%{
+        clip-path: polygon(25% 0, 75% 0, 0 15%, 0 15%);
+    }
+    90%,100%{
+        clip-path: polygon(25% 0, 75% 0, 0 0, 0 0);
+    }
 }
