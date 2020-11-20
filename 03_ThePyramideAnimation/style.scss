@@ -1,4 +1,5 @@
 $border-radius: 3px;
+$ground_position: 67%;
 
 html,
 body {
@@ -17,4 +18,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.picture{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to bottom,#A5D8E3 0% $ground_position,#EDDE8B $ground_position 100%)
 }
