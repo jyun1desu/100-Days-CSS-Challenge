@@ -11,15 +11,26 @@
 
 <body>
     <div class="frame">
-        <div class="menu_icon">
-            <input id="hamburger" type="checkbox">
-            <label for="hamburger">
-                <span class="icon_line"></span>
-                <span class="icon_line"></span>
-                <span class="icon_line"></span>
-            </label>
+        <div class="menu_icon none-animation">
+            <span class="icon_line"></span>
+            <span class="icon_line"></span>
+            <span class="icon_line"></span>
         </div>
     </div>
+
+    <script>
+        const icon = document.querySelector('.menu_icon');
+        icon.addEventListener('click',toggleIcon)
+
+        function toggleIcon(e){
+            const iconDetail = icon.querySelectorAll('.icon_line')
+            iconDetail.forEach(icon=>{
+                icon.classList.toggle('click-active')
+            })
+            icon.classList.remove('none-animation');
+        }
+
+    </script>
 </body>
 
 </html>
