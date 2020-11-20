@@ -10,7 +10,7 @@ body {
   width: 400px;
   height: 400px;
   border-radius: 3px;
-  background-color: #A37D6C;
+  background-color: #EE7D4A;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,8 +31,6 @@ body {
   border-radius: 5px;
   background-color: white;
   box-shadow: 0px 0px 4px #555;
-  transition: all 0.2s;
-  transform-origin: center;
 }
 .menu_icon .icon_line:not(:last-child) {
   margin-bottom: 19px;
@@ -93,10 +91,10 @@ body {
     transform: translate3d(0, 26px, 0) rotate(45deg);
   }
   50% {
-    transform: translate3d(0, 0, 0) rotate(45deg);
+    transform: translate3d(0, 26px, 0) rotate(0);
   }
   100% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
+    transform: translate3d(0, 0, 0) rotate(0);
   }
 }
 @keyframes icon_line_two_rev {
@@ -104,7 +102,7 @@ body {
     transform: scale(0);
     opacity: 0;
   }
-  30%, 100% {
+  70%, 100% {
     transform: scale(1);
     opacity: 1;
   }
@@ -114,7 +112,7 @@ body {
     transform: translate3d(0, -26px, 0) rotate(-45deg);
   }
   50% {
-    transform: translate3d(0, 0, 0) rotate(-45deg);
+    transform: translate3d(0, -26px, 0) rotate(0);
   }
   100% {
     transform: translate3d(0, 0, 0) rotate(0deg);
