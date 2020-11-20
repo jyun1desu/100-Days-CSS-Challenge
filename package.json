@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "sass --watch 02_MenuIcon/style.scss:02_MenuIcon/style.css"
+    "build-css": "sass --watch 03_ThePyramideAnimation/style.scss:03_ThePyramideAnimation/style.css"
   },
   "repository": {
     "type": "git",
