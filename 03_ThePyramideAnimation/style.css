@@ -20,7 +20,32 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 100px;
+  overflow: hidden;
   background: linear-gradient(to bottom, #A5D8E3 0% 67%, #EDDE8B 67% 100%);
+  position: relative;
+}
+.picture .sun {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #FEDC54;
+}
+.picture .mountain {
+  overflow: hidden;
+  width: 120px;
+  height: 60px;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  background-color: #DCDCDC;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 32.7%;
+}
+.picture .mountain .left_side {
+  width: 120px;
+  height: 60px;
+  background-color: #F8F8F8;
+  clip-path: polygon(0 0, 50% 0, 66% 100%, 0 100%);
 }
 
 /*# sourceMappingURL=style.css.map */
