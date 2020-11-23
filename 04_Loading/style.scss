@@ -1,0 +1,20 @@
+$border-radius: 3px;
+
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.frame {
+    width: 400px;
+    height: 400px;
+    border-radius: $border-radius;
+    background-color: #ECC4D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
