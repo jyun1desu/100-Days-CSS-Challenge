@@ -11,9 +11,68 @@ body {
   height: 400px;
   border-radius: 3px;
   background-color: #ECC4D6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+}
+
+.dot_one {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 5px 5px 15px 1px rgba(59, 59, 59, 0.65);
+  animation: dot_one_animation 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+.dot_two {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 5px 5px 10px 1px rgba(59, 59, 59, 0.4);
+  animation: dot_two_animation 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+.dot_three {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 5px 5px 7px 1px rgba(59, 59, 59, 0.3);
+  animation: dot_three_animation 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+@keyframes dot_one_animation {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  70%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes dot_two_animation {
+  0%, 30% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  80%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes dot_three_animation {
+  0%, 60% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  90%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
