@@ -6,4 +6,4 @@ https://100dayscss.com/
 |01|100 Challenge Title|[demo](https://jyun1desu.github.io/100-Days-CSS-Challenge/01_Title/)|
 |02|Menu Icon Toggle|[demo](https://jyun1desu.github.io/100-Days-CSS-Challenge/02_MenuIcon/)|
 |03|The Pyramide Animation|[demo](https://jyun1desu.github.io/100-Days-CSS-Challenge/03_ThePyramideAnimation/)|
-|04|Loading Animation|[demo](https://jyun1desu.github.io/100-Days-CSS-Challenge/03_Loading/)|
+|04|Loading Animation|[demo](https://jyun1desu.github.io/100-Days-CSS-Challenge/04_Loading/)|
