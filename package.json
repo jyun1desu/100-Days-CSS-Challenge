@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "sass --watch 03_ThePyramideAnimation/style.scss:03_ThePyramideAnimation/style.css"
+    "build-css": "sass --watch 04_Loading/style.scss:04_Loading/style.css"
   },
   "repository": {
     "type": "git",
